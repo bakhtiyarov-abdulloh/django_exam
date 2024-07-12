@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
     'django_celery_results',
     'django_celery_beat',
-    'mptt'
+    'mptt',
+    'embed_video'
 
 ]
 
@@ -241,3 +242,8 @@ EMAIL_HOST_PASSWORD = 'wzsa lnvm gzgh mqbv'
 
 CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 CELERY_RESULT_BACKEND = 'django-db'
+
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.template.context_processors.request',
+)
